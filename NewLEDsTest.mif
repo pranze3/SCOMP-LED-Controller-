@@ -1,0 +1,43 @@
+WIDTH=16;
+DEPTH=2048;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0000: 0817; --         LOAD B0         
+0001: 9820; -- 		OUT LED0_BRIGHT   ; LED0 = 32
+0002: 0818; --         LOAD B1         
+0003: 9821; -- 		OUT LED1_BRIGHT   ; LED1 = 64
+0004: 0819; --         LOAD B2         
+0005: 9822; -- 		OUT LED2_BRIGHT   ; LED2 = 96
+0006: 081A; --         LOAD B3         
+0007: 9823; -- 		OUT LED3_BRIGHT   ; LED3 = 128
+0008: 081B; --         LOAD B4         
+0009: 9824; -- 		OUT LED4_BRIGHT   ; LED4 = 160
+000A: 081C; --         LOAD B5         
+000B: 9825; -- 		OUT LED5_BRIGHT   ; LED5 = 192
+000C: 081D; --         LOAD B6         
+000D: 9826; -- 		OUT LED6_BRIGHT   ; LED6 = 224
+000E: 081E; --         LOAD B7         
+000F: 9827; -- 		OUT LED7_BRIGHT   ; LED7 = 255
+0010: 081F; --         LOAD B8         
+0011: 9828; -- 		OUT LED8_BRIGHT   ; LED8 = 255
+0012: 0820; --         LOAD B9         
+0013: 9829; -- 		OUT LED9_BRIGHT   ; LED9 = 255
+0014: 0821; --         LOAD AllLEDsMask
+0015: 9801; --         OUT LED_SELECTOR
+0016: 2816; --         JUMP MainLoop
+0017: 000F; -- B0:     DW &H0F    ; 15
+0018: 0028; -- B1:     DW &H28    ; 40
+0019: 0041; -- B2:     DW &H41    ; 65
+001A: 005A; -- B3:     DW &H5A    ; 90
+001B: 0073; -- B4:     DW &H73    ; 115
+001C: 008C; -- B5:     DW &H8C    ; 140
+001D: 00A5; -- B6:     DW &HA5    ; 165
+001E: 00BE; -- B7:     DW &HBE    ; 190
+001F: 00D7; -- B8:     DW &HD7    ; 215
+0020: 00FA; -- B9:     DW &HFA    ; 250
+0021: 03FF; -- AllLEDsMask:    DW &H03FF  ; Binary 1111111111 (all LEDs on)
+[0022..07FF] : 0000; -- [empty memory]
+END;

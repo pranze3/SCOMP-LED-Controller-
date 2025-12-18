@@ -1,0 +1,149 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 304 368)
+	(text "IO_DECODER" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst" (rect 8 288 25 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IO_ADDR[10..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "IO_ADDR[10..0]" (rect 21 27 102 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IO_CYCLE" (rect 0 0 55 12)(font "Arial" ))
+		(text "IO_CYCLE" (rect 21 43 76 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "SWITCH_EN" (rect 0 0 64 12)(font "Arial" ))
+		(text "SWITCH_EN" (rect 165 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "TIMER_EN" (rect 0 0 54 12)(font "Arial" ))
+		(text "TIMER_EN" (rect 174 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "HEX0_EN" (rect 0 0 48 12)(font "Arial" ))
+		(text "HEX0_EN" (rect 179 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "HEX1_EN" (rect 0 0 48 12)(font "Arial" ))
+		(text "HEX1_EN" (rect 179 75 219 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "LED0_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED0_BRIGHT" (rect 157 91 219 103)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "LED1_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED1_BRIGHT" (rect 157 107 219 119)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "LED2_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED2_BRIGHT" (rect 157 123 219 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "LED3_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED3_BRIGHT" (rect 157 139 219 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "LED4_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED4_BRIGHT" (rect 157 155 219 167)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "LED5_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED5_BRIGHT" (rect 157 171 219 183)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "LED6_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED6_BRIGHT" (rect 157 187 219 199)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "LED7_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED7_BRIGHT" (rect 157 203 219 215)(font "Arial" ))
+		(line (pt 240 208)(pt 224 208))
+	)
+	(port
+		(pt 240 224)
+		(output)
+		(text "LED8_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED8_BRIGHT" (rect 157 219 219 231)(font "Arial" ))
+		(line (pt 240 224)(pt 224 224))
+	)
+	(port
+		(pt 240 240)
+		(output)
+		(text "LED9_BRIGHT" (rect 0 0 74 12)(font "Arial" ))
+		(text "LED9_BRIGHT" (rect 157 235 219 247)(font "Arial" ))
+		(line (pt 240 240)(pt 224 240))
+	)
+	(port
+		(pt 240 272)
+		(output)
+		(text "LEDs_EN" (rect 0 0 48 12)(font "Arial" ))
+		(text "LEDs_EN" (rect 179 267 219 279)(font "Arial" ))
+		(line (pt 240 272)(pt 224 272))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 288))
+	)
+)

@@ -1,0 +1,12 @@
+WIDTH=16;
+DEPTH=2048;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0000: B955; --     LOADI -1          ; LED pattern = 0b11111111 = -1
+0001: 9814; --     OUT   LEDCtrl     ; Send to LEDController
+0002: 2802; --     JUMP Loop         ; Wait here
+[0003..07FF] : 0000; -- [empty memory]
+END;
