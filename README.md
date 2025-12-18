@@ -19,7 +19,7 @@ I implemented the core logic in VHDL (primarily in `ledcontroller.vhd`), priorit
 ## <u>**Hardware Implementation**</u>
 The design was synthesized and tested on the **Terasic DE-10 Lite** board (Intel MAX 10 FPGA).
 
-* **SCOMP Integration:** The module connects to the standard SCOMP peripheral bus (`IO_DATA`, `IO_WRITE`, `IO_ADDR`), acting as a slave device.
+* **SCOMP Integration:** The module connects to the standard SCOMP peripheral bus (`IO_DATA`, `IO_WRITE`, `IO_ADDR`), acting as a secondary device.
 * **Efficiency:** By decoupling the "Enable" logic from the "Brightness" logic, the system allows for complex patterns (like blinking a dimmed LED) without needing to reload brightness values constantly.
 
 ## <u>**Tools Used**</u>

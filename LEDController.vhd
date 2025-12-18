@@ -50,6 +50,7 @@ ARCHITECTURE a OF LEDController IS
 	-- Gamma correction LUT (γ=2.2)
   TYPE gamma_lut_type IS ARRAY (0 TO 255) OF STD_LOGIC_VECTOR(7 DOWNTO 0);
   
+  --lookup table for gamma correction, choosing best LUT for an even spectrum spread
   CONSTANT gamma_lut : gamma_lut_type := (
     x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"00", x"01",
     x"01", x"01", x"01", x"01", x"01", x"01", x"01", x"01", x"01", x"02", x"02", x"02", x"02", x"02", x"02", x"02",
